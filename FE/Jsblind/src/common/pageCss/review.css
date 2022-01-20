@@ -1,0 +1,90 @@
+.review-star {
+  font-size: 35px;
+  fill: orange;
+  stroke-width: 1;
+  padding: 3px;
+  margin-bottom: 6px;
+}
+
+.review-reviewbox {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: solid var(--red);
+  border-radius: 20px;
+}
+
+.review-reviewbox h1 {
+  margin-bottom: 20px;
+}
+
+.review-star-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2em;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 4em;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: orange;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+
+.review-submit-btn {
+  background-color: var(--mint);
+  border-radius: 20px;
+}
+
+.review-submit-btn:hover {
+  background-color: var(--mint);
+}
+
+.review-submit-disalbe-btn {
+  background-color: var(--lightgrey);
+  pointer-events: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.review-submit-disalbe-btn:hover {
+  background-color: var(--lightgrey);
+}
+
+.review-move-btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.review-move-btn-box button {
+  margin: 20px;
+}
+
+.review-rematch-btn {
+  background-color: var(--red);
+}
+
+.review-rematch-btn:hover {
+  background-color: coral;
+}

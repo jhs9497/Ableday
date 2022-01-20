@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "IM_Hyemin-Bold";
+}
+
+svg {
+  cursor: pointer;
+}
+
+:root {
+  --orange: #f3b0c3;
+  --red: #f2aec7;
+  --purple: #eba9f5;
+  --lightPurple: #e5b2f1;
+  --mint: #b1f3f3;
+  --lightgrey: #d3d3d3;
+}
+
+#background {
+  padding: 1px;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at 15% 15%,
+    var(--orange),
+    var(--purple),
+    var(--mint)
+  );
+  position: absolute;
+  overflow: auto;
+}
+
+#background-cloudy {
+  background-color: rgba(2, 2, 2, 0.7);
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: scroll;
+}
+
+#container {
+  margin-left: 50%;
+  transform: translate(-50%);
+  min-height: 90vh;
+  width: 768px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.btn {
+  width: 400px;
+  height: 50px;
+  background-color: var(--lightPurple);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px grey;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btn-sm {
+  width: 150px;
+  height: 25px;
+  background-color: var(--lightPurple);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px grey;
+  transition: all 0.1s;
+}
+
+.btn-sm:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btn-rounded {
+  width: 400px;
+  height: 50px;
+  background-color: var(--lightPurple);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn-rounded:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btn-rounded-sm {
+  width: 150px;
+  height: 25px;
+  background-color: var(--lightPurple);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 50px;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.btn-rounded-sm:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btn-util {
+  background-color: var(--lightPurple);
+  box-shadow: 3px 3px 3px grey;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn-util:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btn:active,
+.btn-sm:active,
+.btn-rounded:active,
+.btn-rounded-sm:active,
+.btn-util:active {
+  padding-left: 1px;
+  padding-top: 1px;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-mode {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .web-mode {
+    display: none !important;
+  }
+}

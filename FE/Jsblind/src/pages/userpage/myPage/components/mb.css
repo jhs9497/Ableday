@@ -1,0 +1,37 @@
+@media only screen and (max-width: 430px) {
+  .fr_intro .fr_detail {
+    display: flex;
+  }
+  .fr_intro .fr_detail .item {
+    margin-left: 3px;
+    margin-right: 5px;
+    color: darkolivegreen;
+
+    background-color: transparent;
+    /* position: relative; */
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .fr_intro .fr_detail :last-child {
+    display: none;
+  }
+  #delete_key {
+    display: none;
+  }
+
+  .fr_intro .fr_option .item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -25px;
+    cursor: pointer;
+    color: rgb(65, 65, 238);
+    font-size: 15px;
+    text-shadow: 1px 1px 1px grey;
+  }
+  .fr_intro .fr_option {
+    display: flex;
+    position: absolute;
+    left: 20%;
+  }
+}

@@ -1,0 +1,248 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page-header {
+  display: flex;
+  justify-content: end;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.to-mypage-btn-web {
+  margin-right: 10%;
+  margin-top: 10%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-mypage-btn-mobile {
+  margin-right: 10%;
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  font-size: 0.5em;
+  border-radius: 10px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-info-title {
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 1px;
+}
+
+.group-select-tip {
+  color: rgb(5, 0, 0);
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.animals {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.animal-info {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  margin-bottom: 50px;
+  color: #ffffff;
+  /* width: 100%; */
+}
+
+.animal-info:hover {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
+  font-size: 1em;
+  border-radius: 5%;
+}
+
+.animal-info * {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+.animal-image {
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.animal-name {
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.group-people-web {
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6em;
+  font-size: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.group-people-mobile {
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  opacity: 0;
+  font-size: 0.5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.animal-image:hover {
+  opacity: 0.25;
+  transform: scale(1.1);
+}
+
+.animal-group {
+  color: rgb(47, 5, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-people-web:hover {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.group-people-mobile:hover {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.quick-match {
+  height: 40%;
+  margin-top: 10px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-match-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes btnfocus {
+  from {
+    background-color: rgb(243, 98, 134);
+  }
+  to {
+    background-color: rgb(247, 0, 255);
+  }
+}
+
+.quick-match-btn {
+  width: 120px;
+  height: 120px;
+  animation: btnfocus 1s linear infinite;
+  border-radius: 100%;
+  border: 4px double rgb(243, 226, 226);
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.quick-match-ellipse {
+  width: 90%;
+  height: 50%;
+  position: relative;
+}
+
+.text-on-ellipse {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-blank-web {
+  font-size: 1.2em;
+}
+
+.animal-blank-mobile {
+  margin-top: 10%;
+  font-size: 1em;
+}
+
+.animal-list-web {
+  display: flex;
+  margin-bottom: 20px;
+  border: 5px double var(--mint);
+}
+
+.animal-name-web {
+  font-size: 2em;
+}
+
+.animal-description-web {
+  width: 70%;
+  font-size: 1.5em;
+}
+
+.animal-list-mobile {
+  display: flex;
+  margin-bottom: 20px;
+  border: 5px double var(--mint);
+  font-size: 0.5em;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.animal-paw-mobile {
+  width: 5px;
+}
+
+.animal-name-mobile {
+  font-size: 1.2em;
+  padding-top: 15px;
+}
+
+.animal-description-mobile {
+  width: 70%;
+  font-size: 1em;
+}

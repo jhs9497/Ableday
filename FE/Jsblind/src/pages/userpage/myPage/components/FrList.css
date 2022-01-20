@@ -1,0 +1,56 @@
+.fr_intro {
+  display: flex;
+  position: relative;
+}
+
+.fr_intro .fr_detail {
+  display: flex;
+  margin-right: 10px;
+}
+
+.fr_intro .fr_detail .item {
+  margin-left: 5px;
+  margin-right: 10px;
+  color: darkolivegreen;
+  border: 1px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  background-color: pink;
+}
+
+.fr_intro .fr_option {
+  display: flex;
+  position: absolute;
+  left: 10%;
+}
+.fr_intro .fr_option .item {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -25px;
+  cursor: pointer;
+  color: rgb(65, 65, 238);
+  font-size: 15px;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.quick_btn {
+  cursor: pointer;
+  color: rgb(247, 138, 145);
+  text-shadow: 1px 1px 1px grey;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.fr_null {
+  height: 30vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top: 1px dotted violet;
+  position: relative;
+  padding: 30px;
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 630px) {
+  .mb_option {
+    font-size: 15px;
+  }
+  .top_option button {
+    font-size: 11px;
+  }
+  .header {
+    margin-top: 5px;
+  }
+  .header img {
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 30%;
+    height: 80%;
+    position: relative;
+  }
+  .header .edit_img {
+    position: absolute;
+    left: 130px;
+    top: 150px;
+    font-size: 12px;
+  }
+
+  .header .userinfo .info .info1 li p {
+    font-size: 12px;
+  }
+
+  /* .header .userinfo .info .info1 :last-child {
+    display: none;
+  } */
+
+  .header .userinfo .info .info2 {
+    display: none;
+  }
+  .header .userinfo .info .info1 {
+    border: none;
+  }
+
+  .user_intro {
+    margin-top: 10px;
+  }
+  .user_intro h3 {
+    font-size: 15px;
+  }
+}

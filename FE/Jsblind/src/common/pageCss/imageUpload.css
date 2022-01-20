@@ -1,0 +1,80 @@
+.image-upload-title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: rgb(28, 25, 71);
+}
+
+.image-upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-upload {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-select {
+  display: none;
+}
+
+.image-info {
+  margin-top: 20px;
+  color: rgb(252, 48, 201);
+  font-size: 0.8rem;
+}
+
+.file-btn {
+  margin: 5px;
+  border: outset 1px var(--lightPurple);
+  background-color: var(--purple);
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-image {
+  border: 5px double var(--red);
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.submit-btn {
+  margin-left: 5px;
+  background-color: var(--lightPurple);
+  box-shadow: 3px 3px 3px grey;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.submit-btn:disabled {
+  background-color: transparent;
+  color: var(--purple);
+}
+
+.image-submit {
+  display: flex;
+  align-items: center;
+}
+
+.image-submit p {
+  font-size: 1.5rem;
+}

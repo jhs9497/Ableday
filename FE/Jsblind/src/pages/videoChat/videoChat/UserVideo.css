@@ -1,0 +1,74 @@
+.streamcomponent {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.streamcomponent video {
+  width: 1px;
+  height: 1px;
+  margin: 10px;
+  opacity: 0;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: var(--red);
+  box-shadow: 10px 10px 10px grey;
+}
+
+.streamcomponent canvas {
+  width: 100%;
+  height: 400px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 1;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: var(--red);
+  box-shadow: 10px 10px 10px grey;
+  z-index: -1;
+}
+
+.streamcomponent img {
+  width: 80%;
+  height: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 17px;
+  position: absolute;
+}
+
+#session-header {
+  margin-top: 30px;
+}
+
+#session-title {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .streamcomponent {
+    height: 30%;
+  }
+  .streamcomponent canvas {
+    width: 80%;
+    height: 210px;
+    margin-bottom: 0px;
+  }
+  .streamcomponent img {
+    width: 70%;
+    height: 180px;
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,44 @@
+.stream-container {
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.heart {
+  z-index: 999;
+  position: absolute;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fc2a62;
+  opacity: 1;
+  position: absolute;
+  height: 15px;
+  width: 20px;
+  border-radius: 15px 0px 0px 15px;
+}
+.heart:before {
+  transform: rotate(45deg);
+}
+.heart:after {
+  left: 10.5px;
+  transform: rotate(135deg);
+}
+.heart-generator-segment {
+  min-height: 500px;
+  background: #dddddd;
+}
+
+.videoChat-heartBtn {
+  display: block;
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .stream-container {
+    margin-top: 0px;
+  }
+}

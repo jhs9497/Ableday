@@ -1,0 +1,199 @@
+/* common */
+img {
+  display: block;
+}
+ul li {
+  display: block;
+}
+.myPage {
+  overflow: hidden;
+}
+
+/* 헤더 유저 이미지 and 유저정보 */
+.top_option {
+  height: 5.5vh;
+}
+.top_option ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+}
+
+.top_option ul li {
+  margin-left: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+  color: rgb(247, 138, 145);
+  text-shadow: 1px 1px 1px grey;
+  font-size: 20px;
+}
+
+.top_option button {
+  cursor: pointer;
+  color: rgb(247, 138, 145);
+  text-shadow: 1px 1px 1px grey;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.header {
+  height: 27vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: -1vh;
+}
+
+.header img {
+  display: inline-block;
+  width: 30%;
+  height: 90%;
+  /* margin-top: 2px; */
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.header .edit_img {
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  top: 100%;
+  cursor: pointer;
+}
+
+.header .userinfo {
+  width: 50%;
+  height: auto;
+  left: 40%;
+  margin-top: 5%;
+}
+.header .userinfo > ul {
+  line-height: 30px;
+}
+
+.header .userinfo input {
+  line-height: 30px;
+  margin-top: 10px;
+}
+.header .option {
+  width: 15%;
+  position: absolute;
+  cursor: pointer;
+  left: 85%;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+/* 유저의 자기소개 키워드 */
+.user_intro {
+  margin-top: 3vh;
+  height: 15vh;
+  position: relative;
+}
+.user_intro .intro_toggle {
+  margin: 10px;
+}
+.user_intro p {
+  display: block;
+}
+.user_intro .guide {
+  display: inline-block;
+  width: 70%;
+  opacity: 0.6;
+}
+/* 친구리스트 */
+.friends {
+  width: 100%;
+  margin-top: 6.5vh;
+  height: 35vh;
+  overflow: auto;
+}
+
+#key_input {
+  display: flex;
+
+  margin-left: 5%;
+}
+.user_intro input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: violet;
+  background-color: transparent;
+  text-align: center;
+  margin-left: 7%;
+  width: 10%;
+}
+.header input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: violet;
+  background-color: transparent;
+  text-align: center;
+  margin-left: 6px;
+  transition: 3s;
+  width: 20%;
+}
+
+.header input:focus {
+  width: auto;
+}
+
+.header button {
+  border-bottom: 1px solid violet;
+  background-color: transparent;
+  margin-left: 60%;
+  cursor: pointer;
+}
+.user_intro button {
+  border-bottom: 1px solid violet;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  .avtar {
+    width: 400px;
+  }
+} */
+
+.user_intro h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.userinfo li {
+  margin-top: 5px;
+}
+
+.header .userinfo .info {
+  display: flex;
+  position: relative;
+  margin-top: 7%;
+  justify-content: center;
+  align-content: center;
+}
+
+.header .userinfo .info .info1 {
+  margin-right: 10px;
+  line-height: 200%;
+  text-align: start;
+  border-right: 0.1px solid violet;
+  padding-right: 10px;
+}
+
+.header .userinfo .info .info2 {
+  margin-left: 10px;
+  line-height: 150%;
+  text-align: start;
+}
+
+#name_input {
+  text-align: start;
+}
